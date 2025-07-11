@@ -1,0 +1,21 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalDependencies": [".env"],
+  "tasks": {
+    "check-types": {
+      "dependsOn": ["^check-types"]
+    },
+    "dev": {
+      "persistent": true,
+      "cache": false
+    },
+    "py-install": {
+      "persistent": false,
+      "cache": true
+    },
+    "py-install-dev": {
+      "persistent": false,
+      "cache": true
+    }
+  }
+}
