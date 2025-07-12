@@ -1,5 +1,8 @@
 import { Injectable } from '@nestjs/common';
-import { CreateRecommendationDto } from './dto/create-recommendation.dto';
+import {
+  CreateRecommendationDto,
+  RiskTolerance,
+} from './dto/create-recommendation.dto';
 import { PrismaService } from '../../prisma.service';
 
 @Injectable()
@@ -12,7 +15,7 @@ export class RecommendationService {
     await this.prisma.recommendation.create({
       data: {
         ...dto,
-        recommendation,
+        recommendation: recommendation,
       },
     });
 
@@ -25,11 +28,11 @@ export class RecommendationService {
   private getRecommendation(dto: CreateRecommendationDto): string {
     const { age, riskTolerance } = dto;
 
-    if (age < 40 && riskTolerance === 'high') {
+    if (age < 40 && riskTolerance === RiskTolerance.HIGH) {
       return 'Term Life – $500,000 for 20 years';
     }
 
-    if (age >= 40 && riskTolerance === 'low') {
+    if (age >= 40 && riskTolerance === RiskTolerance.LOW) {
       return 'Whole Life – $250,000';
     }
 
