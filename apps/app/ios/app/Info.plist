@@ -28,7 +28,7 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>app</string>
-          <string>com.lifeinsurance.mvp.app</string>
+          <string>com.liv.mvp.app</string>
         </array>
       </dict>
     </array>

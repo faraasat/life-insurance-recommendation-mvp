@@ -257,7 +257,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lifeinsurance.mvp.app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liv.mvp.app";
 				PRODUCT_NAME = "app";
 				SWIFT_OBJC_BRIDGING_HEADER = "app/app-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -286,7 +286,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.lifeinsurance.mvp.app";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.liv.mvp.app";
 				PRODUCT_NAME = "app";
 				SWIFT_OBJC_BRIDGING_HEADER = "app/app-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

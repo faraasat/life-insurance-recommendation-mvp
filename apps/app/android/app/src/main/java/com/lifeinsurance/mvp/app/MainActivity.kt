@@ -1,4 +1,4 @@
-package com.lifeinsurance.mvp.app
+package com.liv.mvp.app
 import expo.modules.splashscreen.SplashScreenManager
 
 import android.os.Build

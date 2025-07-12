@@ -1,4 +1,4 @@
-package com.lifeinsurance.mvp.app
+package com.liv.mvp.app
 
 import android.app.Application
 import android.content.res.Configuration

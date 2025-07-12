@@ -2,10 +2,13 @@
   "name": "life-insurance-recommendation-mvp",
   "description": "Life Insurance Recommendation MVP",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "packages/*"
+    ],
+    "nohoist": []
+  },
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
