@@ -14,7 +14,8 @@
   "scripts": {
     "frontend": "yarn workspaces foreach -R --from apps/frontend",
     "backend": "yarn workspaces foreach -R --from apps/backend",
-    "start:dev": "yarn workspaces foreach -Rpit --from '{apps/backend,apps/frontend}' run dev"
+    "start:dev": "yarn workspaces foreach -Rpit --from '{apps/backend,apps/frontend}' run dev",
+    "start:app": "yarn workspaces foreach -Rpit --from '{apps/app}' run start"
   },
   "keywords": [],
   "author": "",
