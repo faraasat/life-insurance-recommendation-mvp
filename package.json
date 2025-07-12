@@ -9,7 +9,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "frontend": "yarn workspaces foreach -R --from apps/frontend",
+    "backend": "yarn workspaces foreach -R --from apps/backend",
+    "dev": "yarn frontend dev && yarn backend start:dev"
   },
   "keywords": [],
   "author": "",
